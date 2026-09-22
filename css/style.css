@@ -77,10 +77,10 @@ main > section:first-child h2 {
 }
 
 .gatos > div {
-   display: flex;
+   display: grid;
    gap: 20px;
    justify-content: center;
-   flex-wrap: wrap;
+   grid-template-columns: repeat(3, 1fr);
     
 }
 
@@ -119,28 +119,25 @@ main > section:first-child h2 {
     }
 
     .gatos > div {
-        flex-direction: column;
-        align-items: center;
+        grid-template-columns: 1fr;
     }
 
     nav {
-        display: flex;
-        flex-direction: column;
+        display: grid;
+        grid-template-columns: 1fr;
         gap: 10px;
     }
 
     .projetos {
-        flex-direction: column;
-        align-items: center;
+        grid-template-columns: 1fr;
     }
 
 
 }
 
 .projetos {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
 }
 
