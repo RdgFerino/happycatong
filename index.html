@@ -15,15 +15,46 @@
 
         <h1>Bem-vindo à HappyCatONG</h1>
 
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="menu-icon">&#9776;</label>
+    
         <nav>
-            <ul>
-                <li><a href="index.html">Início</a></li>
-                <li><a href="projetos.html">Projetos</a></li>
-                <li><a href="cadastro.html">Seja um Voluntário</a></li>
-            </ul>
+                <a href="index.html">Início</a>
+
+             <div class="dropdown">
+                    <a href="projetos.html">Projetos ▾</a>
+
+                <div class="submenu">
+                    <a href="projetos.html#adocao">Adoção</a>
+                    <a href="projetos.html#apadrinhamento">Apadrinhamento</a>
+                     <a href="projetos.html#voluntariado">Voluntariado</a>
+                </div>
+            </div>
         </nav>
     </header>
     <main>
+
+        <section class="feedback">
+        <div class="alerta alerta-sucesso">
+            <strong>Sucesso!</strong>
+                O cadastro foi realizado com sucesso.
+        </div>
+
+        <div class="alerta alerta-aviso">
+            <strong>Atenção!</strong>
+             Verifique as informações antes de continuar.
+        </div>
+
+        <div class="alerta alerta-erro">
+            <strong>Erro!</strong>
+            Não foi possível concluir a operação.
+        </div>
+        </section>
+
+        <div class="toast toast-sucesso">
+        ✓ Cadastro enviado com sucesso!
+        </div>
+
         <section class="cta">
             <h2>Cada gatinho merece um lar</h2>
             <p>A HappyCatONG é uma organização dedicada ao resgate e cuidado de gatos abandonados. Nosso objetivo é proporcionar um lar seguro e amoroso para esses animais, além de promover a conscientização sobre a importância da adoção responsável.</p> 
@@ -41,18 +72,21 @@
 
          <div>
             <article>
-                <h3>Logan</h3>
                 <img src="img/Logan.jpg" alt="Logan, um gato fofo e brincalhão">
+                <h3>Logan</h3>
+                <span class="badge badge-disponivel">Disponível</span>   
                 <p>Este é o Logan, um dos nossos príncipes. Está procurando um lar amoroso.</p>
             </article>
             <article>
-                <h3>Coraline</h3>
                 <img src="img/Coraline.jpg" alt="Coraline, uma gata gentil e adorável">
+                <h3>Coraline</h3>
+                <span class="badge badge-disponivel">Disponível</span>
                 <p>Esta é a Coraline, uma gata gentil e adorável. Ela está ansiosa para encontrar sua família para sempre.</p>
             </article>
             <article>
-                <h3>Timy</h3>
                 <img src="img/Timy.jpg" alt="Timy, um felino brincalhão e carinhoso">
+                <h3>Timy</h3>
+                <span class="badge badge-disponivel">Disponível</span>
                 <p>Este é o Timy, um felino brincalhão e carinhoso. Ele está esperando por alguém especial para chamá-lo de seu.</p>
             </article>
 
@@ -64,5 +98,17 @@
     <footer>
         <p>&copy; 2026 HappyCatONG. All rights reserved.</p>
     </footer>
+    <div class="modal">
+    <div class="modal-conteudo">
+        <h2>Obrigado por colaborar!</h2>
+
+        <p>
+            A sua contribuição ajuda a HAPPYCATONG
+            a cuidar dos animais.
+        </p>
+
+        <a href="#" class="botao">Fechar</a>
+    </div>
+</div>
 </body>
 </html>
